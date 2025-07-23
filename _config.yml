@@ -1,0 +1,10 @@
+destination: docs
+
+title: "Мій Блог"
+description: "Блог на Jekyll"
+baseurl: "" # якщо сайт у корені домену
+url: "https://yourusername.github.io"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

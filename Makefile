@@ -1,33 +1,38 @@
-# === JBake Makefile ===
+# === Makefile для Jekyll з локальними залежностями ===
 
-JB_VERSION := 2.7.0-rc.7
-JB_URL := https://github.com/jbake-org/jbake/releases/download/v$(JB_VERSION)/jbake-$(JB_VERSION)-bin.zip
-JB_DIR := .jbake
-JB_CLI := $(JB_DIR)/jbake-$(JB_VERSION)-bin/bin/jbake
+JEKYLL = bundle exec jekyll
+BUNDLE_DIR = .vendor/bundle
 
-SRC_FOLDER := src/
-OUT_FOLDER := docs/
+SRC_DIR = src
+BUILD_DIR = docs
 
-.PHONY: all init build serve clean
+.PHONY: all install build serve clean
 
-pull:
-	@echo "==> Downloading JBake..."
-	mkdir -p $(JB_DIR)
-	curl -L -o $(JB_DIR)/jbake.zip $(JB_URL)
-	unzip -o $(JB_DIR)/jbake.zip -d $(JB_DIR)
+# Основна ціль
+all: build
 
-init:
-	@echo "==> Generating static site..."
-	$(JB_CLI) -i -t thymeleaf
+# Встановити залежності в локальну папку
+install:
+	@echo "==> Using Ruby from rbenv..."
+	@which ruby
+	@ruby -v
+	@echo "==> Installing Ruby dependencies locally in $(BUNDLE_DIR)..."
+	bundle config set --local path $(BUNDLE_DIR)
+	bundle install --path $(BUNDLE_DIR)
 
-build:
-	@echo "==> Generating static site..."
-	$(JB_CLI) -b $(SRC_FOLDER) $(OUT_FOLDER)
+# Побудова сайту
+build: install
+	@echo "==> Building static site..."
+	$(JEKYLL) build --source $(SRC_DIR) --destination $(BUILD_DIR)
 
-serve:
-	@echo "==> Serving site on http://localhost:8000..."
-	cd $(OUT_FOLDER) && python3 -m http.server 8000
+# Запуск локального сервера
+serve: install
+	@echo "==> Starting server at http://localhost:4000"
+	$(JEKYLL) serve --source $(SRC_DIR) --destination $(BUILD_DIR) --trace
 
+# Очистити
 clean:
-	@echo "==> Cleaning output directory..."
-	rm -rf $(OUT_FOLDER)
+	@echo "==> Cleaning output..."
+	$(JEKYLL) clean
+	rm -rf $(BUILD_DIR)
+	rm Gemfile.lock

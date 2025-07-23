@@ -1,2 +1,5 @@
 .idea/
-.jbake/
+.bundle/
+.vendor/
+.jekyll-cache/
+Gemfile.lock
