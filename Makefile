@@ -6,7 +6,7 @@ JB_DIR := .jbake
 JB_CLI := $(JB_DIR)/jbake-$(JB_VERSION)-bin/bin/jbake
 
 SRC_FOLDER := src/
-OUT_FOLDER := out/
+OUT_FOLDER := docs/
 
 .PHONY: all init build serve clean
 
