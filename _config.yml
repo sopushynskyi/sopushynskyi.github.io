@@ -3,8 +3,12 @@ destination: docs
 title: "Мій Блог"
 description: "Блог на Jekyll"
 baseurl: "" # якщо сайт у корені домену
-url: "https://yourusername.github.io"
+url: "https://sopushynskyi.github.io"
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  authors:
+    output: true

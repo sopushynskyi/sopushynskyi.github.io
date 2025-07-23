@@ -1,4 +1,10 @@
-<nav>
-    <a href="/">Mykola Sopushynskyi</a>
-    <a href="/about.html">About</a>
-</nav>
+<div class="navigation-bar">
+    {% for item in site.data.navigation %}
+    <span>
+    <a href="{{ item.link }}" {% if page.url == item.link %}
+       style="font-weight: bold; border-bottom: 3px solid var(--font-color);"{% endif %}
+    ><span>{{ item.name }}</span></a>
+    <span>
+    {% endfor %}
+
+</div>
