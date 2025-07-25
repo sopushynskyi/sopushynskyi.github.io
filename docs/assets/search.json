@@ -1,0 +1,19 @@
+[
+  
+    {
+      "title"    : "Рекомендована література",
+      "description" : "Тут зібрано статті та книги які я прочитав чи планую, ну і рекомендую",
+      "tags"     : "",
+      "url"      : "/bookd/",
+      "date"     : "2025-07-24 00:00:00 +0700"
+    } ,
+  
+    {
+      "title"    : "Вступ",
+      "description" : "A banana is an edible fruit – botanically a berry – produced by several",
+      "tags"     : "",
+      "url"      : "/welcome/",
+      "date"     : "2025-07-23 00:00:00 +0700"
+    } 
+  
+]

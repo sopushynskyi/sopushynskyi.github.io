@@ -1,0 +1,16 @@
+- title: Головна
+  url: /
+  external: false
+
+- title: Автори
+  url: /staff/
+  external: false
+
+- title: Про блог
+  url: /about/
+  external: false # set true if you using external link, see below
+
+# Example:
+# - title: github
+#   url: https://github.com/piharpi/jekyll-klise
+#   external: true

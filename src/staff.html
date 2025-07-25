@@ -1,0 +1,9 @@
+---
+layout: default
+title: Автори
+---
+<div>
+  {% for author in site.data.authors %}
+    {% include author.html author='author' render_posts='false' %}
+  {% endfor %}
+</div>
