@@ -4,6 +4,7 @@ title: Автори
 ---
 <div>
   {% for author in site.data.authors %}
-    {% include author.html author='author' render_posts='false' %}
+    {% assign render_posts=true %}
+    {% include author.html author='author' render_posts='render_posts' %}
   {% endfor %}
 </div>

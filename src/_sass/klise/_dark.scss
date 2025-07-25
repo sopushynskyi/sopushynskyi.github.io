@@ -172,6 +172,17 @@ body[data-theme="dark"] {
         }
       }
     }
+    .post-item-minimal {
+      a {
+        color: $dark-text-base-color;
+
+        &:hover,
+        &focus {
+          color: $dark-white;
+        }
+      }
+    }
+
   }
 
   // Post Navigation
