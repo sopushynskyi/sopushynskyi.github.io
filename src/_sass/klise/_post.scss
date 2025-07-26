@@ -7,11 +7,29 @@
 }
 
 // Post title
+.post-avatar {
+  position: absolute;
+  background: linear-gradient(to top, $white, $white 10%, rgba(0,0,0,0) 60%);
+  height: 12em;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    display: block;
+    width: auto;
+  }
+}
+
 .header {
-  margin-top: 7.8em;
+  position: relative;
+  padding-top: 9.8em;
   margin-bottom: 3em;
 
   .tags {
+    margin-top: 10px;
     margin-left: 3px;
     letter-spacing: 0.5px;
 
@@ -28,7 +46,7 @@
   .header-title {
     font-size: 2em;
     line-height: 1.2;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 20px;
 
     &.center {
@@ -69,7 +87,7 @@
 
 // Post content
 .page-content {
-  padding-top: 8px;
+  padding-top: 0px;
 
   iframe {
     text-align: center;
@@ -110,6 +128,7 @@
 
   > p {
     margin: 0;
+    text-align: justify;
     padding-top: $spacing-full - 15;
     padding-bottom: $spacing-full - 15;
   }

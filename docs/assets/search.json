@@ -3,7 +3,7 @@
     {
       "title"    : "Рекомендована література",
       "description" : "Тут зібрано статті та книги які я прочитав чи планую, ну і рекомендую",
-      "tags"     : "",
+      "tags"     : "література, блог",
       "url"      : "/bookd/",
       "date"     : "2025-07-24 00:00:00 +0700"
     } ,
@@ -11,7 +11,7 @@
     {
       "title"    : "Вступ",
       "description" : "A banana is an edible fruit – botanically a berry – produced by several",
-      "tags"     : "",
+      "tags"     : "вступ, блог",
       "url"      : "/welcome/",
       "date"     : "2025-07-23 00:00:00 +0700"
     } ,
@@ -19,7 +19,7 @@
     {
       "title"    : "Вступ Бубен",
       "description" : "A banana is an edible fruit",
-      "tags"     : "",
+      "tags"     : "вступ, блог",
       "url"      : "/b/",
       "date"     : "2025-07-22 00:00:00 +0700"
     } 

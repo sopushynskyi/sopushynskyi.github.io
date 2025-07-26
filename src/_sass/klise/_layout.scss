@@ -64,6 +64,12 @@
     float: right;
   }
 
+  .blog-name {
+    float: left;
+    padding-left: 10px;
+    font-weight: $bold-weight;
+  }
+
   .menu-trigger {
     display: none;
   }
@@ -148,12 +154,14 @@
       }
     }
 
-    input[type="checkbox"]:not(:checked) ~ .trigger {
+    input[type="checkbox"]:not(:checked) ~ .trigger,
+    input[type="checkbox"]:not(:checked) ~ .blog-name {
       clear: both;
       visibility: hidden;
     }
 
-    input[type="checkbox"]:checked ~ .trigger {
+    input[type="checkbox"]:checked ~ .trigger,
+    input[type="checkbox"]:checked ~ .blog-name {
       position: fixed;
       animation: 0.2s ease-in forwards fadein;
       -webkit-animation: 0.2s ease-in forwards fadein;

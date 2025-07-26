@@ -149,11 +149,17 @@ body[data-theme="dark"] {
         input[type="checkbox"]:checked ~ .trigger {
           background: $dark-black;
         }
+        input[type="checkbox"]:checked ~ .blog-name {
+          background: $dark-black;
+        }
       }
     }
   }
 
   // Post Item
+  .post-avatar {
+    background: linear-gradient(to top, $dark-black, $dark-black 10%, rgba(0,0,0,0) 60%);
+  }
   .post-item {
     &:not(:first-child) {
       border-color: $dark-light;

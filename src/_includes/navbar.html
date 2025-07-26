@@ -159,10 +159,20 @@
         />
       </svg>
     </a>
+    {%- assign url = page.url -%}
+    {%- assign menus = site.data.menus -%}
+
+    {%- if menus -%}
+      <div class="blog-name">
+        <div class="trigger-container">
+          <a class="menu-link" href="{{ menus[0].url }}">{{ site.title }}</a>
+        </div>
+      </div>
+    {%- endif -%}
+
     <div class="trigger">
       <div class="trigger-container">
-        {%- assign url = page.url -%}
-        {%- assign menus = site.data.menus -%}
+
         {%- if menus %}
           {%- for menu in menus -%} 
             {%- if url == menu.url -%}

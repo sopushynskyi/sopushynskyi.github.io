@@ -10,7 +10,7 @@ repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
 # URL settings
-url: "https://klise.now.sh" #
+url: "https://sopushynskyi.github.io/" #
 baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
@@ -20,7 +20,8 @@ fb_appid:
 collections:
   posts:
     output: true
-
+  authors:
+    output: true
 
 # Markdown settings
 markdown: kramdown
