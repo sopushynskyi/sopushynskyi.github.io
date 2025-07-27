@@ -6,7 +6,7 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% include header.html %}
-{% assign author = site.data.authors | where: 'short_name', page.author | first %}
+{% assign author = site.authors | where: 'short_name', page.author | first %}
 <body data-theme="{{ site.mode }}" class="notransition">
 
   <script>

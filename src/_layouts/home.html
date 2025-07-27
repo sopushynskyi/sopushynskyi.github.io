@@ -12,8 +12,8 @@ home: true
   </h2>
   <div class="post-item-author">
     {{ post.date | date_to_string }}
-    {% assign author = site.data.authors | where: 'short_name', post.author | first %}
-    {% if author %} • <a href="#">@{{ author.name }}</a>{% endif %}
+    {% assign author = site.authors | where: 'author', post.author | first %}
+    {% if author %} • <a href="{{ author.url }}">@{{ author.name }}</a>{% endif %}
   </div>
 </article>
 {%- endfor -%}

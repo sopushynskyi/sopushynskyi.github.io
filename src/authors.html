@@ -3,8 +3,8 @@ layout: default
 title: Автори
 ---
 <div>
-  {% for author in site.data.authors %}
-    {% assign render_posts=true %}
+  {% for author in site.authors %}
+    {% assign render_posts=false %}
     {% include author.html author='author' render_posts='render_posts' %}
   {% endfor %}
 </div>

@@ -1,11 +1,11 @@
 ---
 layout: author
-short_name: mkolas
-name: Микола Сопушинський
+short_name: buben
+name: Бубен
 position: Software engineer
 location: Львів, Україна
-avatar: /assets/img/sopushynskyi_small.png
+avatar: /assets/img/avatar.jpg
 bio: >- # site description
-  Головний редактор
+  Помічник редактора
   for documentation things that he learned, meet him
 ---

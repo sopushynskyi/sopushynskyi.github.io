@@ -1,0 +1,9 @@
+---
+layout: default
+title: Автор
+---
+<div>
+  {% assign author = site.authors | where: 'author', page.author | first %}
+  {% assign render_posts=true %}
+  {% include author.html author='author' render_posts='render_posts' %}
+</div>

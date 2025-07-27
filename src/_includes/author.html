@@ -4,7 +4,7 @@
     src="{{ author.avatar }}"
     alt="{{ author.short_name }}"
   />
-  <h2 class="author-name"><a href="#">@{{ author.name }}</a></h2>
+  <h2 class="author-name"><a href="{{ author.url }}">@{{ author.name }}</a></h2>
   <p class="author-label"><b>Посада</b>: <span>{{ author.position }}, {{ author.location }}</span></p>
   <p class="author-bio"></span> {{ author.bio }}</p>
 
