@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://sopushynskyi.github.io/authors/buben/</loc>
-<lastmod>2025-07-28T22:53:00+07:00</lastmod>
+<lastmod>2025-07-29T06:01:35+07:00</lastmod>
 </url>
 <url>
 <loc>https://sopushynskyi.github.io/authors/mkolas/</loc>
-<lastmod>2025-07-28T22:53:00+07:00</lastmod>
+<lastmod>2025-07-29T06:01:35+07:00</lastmod>
 </url>
 <url>
 <loc>https://sopushynskyi.github.io/b/</loc>
@@ -28,5 +28,11 @@
 </url>
 <url>
 <loc>https://sopushynskyi.github.io/</loc>
+</url>
+<url>
+<loc>https://sopushynskyi.github.io/tags/</loc>
+</url>
+<url>
+<loc>https://sopushynskyi.github.io/thanks/</loc>
 </url>
 </urlset>
