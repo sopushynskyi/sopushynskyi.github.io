@@ -3,7 +3,7 @@ layout: default
 title: Автор
 ---
 <div>
-  {% assign author = site.authors | where: 'author', page.author | first %}
+  {% assign author = site.authors | where: 'short_name', page.short_name | first %}
   {% assign render_posts=true %}
   {% include author.html author='author' render_posts='render_posts' %}
 </div>
