@@ -1,11 +1,11 @@
 ---
 layout: author
+priority: 2
 short_name: buben
-name: Бубен
+name: Бубен Кеу
 position: Software engineer
 location: Львів, Україна
-avatar: /assets/img/avatar.jpg
+avatar: /assets/img/ava/avatar.jpg
 bio: >- # site description
-  Помічник редактора
-  for documentation things that he learned, meet him
+  Люблю пити пиво
 ---

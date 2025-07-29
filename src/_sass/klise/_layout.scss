@@ -68,6 +68,17 @@
     float: left;
     padding-left: 10px;
     font-weight: $bold-weight;
+    @include media-query($on-mobile) {
+      margin-top: 7px;
+    }
+    a {
+      text-transform: uppercase;
+      color: $black;
+      line-height: 2.25;
+      text-decoration: none;
+      padding: 5px 8px;
+      letter-spacing: .3px;
+    }
   }
 
   .menu-trigger {
@@ -154,14 +165,12 @@
       }
     }
 
-    input[type="checkbox"]:not(:checked) ~ .trigger,
-    input[type="checkbox"]:not(:checked) ~ .blog-name {
+    input[type="checkbox"]:not(:checked) ~ .trigger {
       clear: both;
       visibility: hidden;
     }
 
-    input[type="checkbox"]:checked ~ .trigger,
-    input[type="checkbox"]:checked ~ .blog-name {
+    input[type="checkbox"]:checked ~ .trigger {
       position: fixed;
       animation: 0.2s ease-in forwards fadein;
       -webkit-animation: 0.2s ease-in forwards fadein;

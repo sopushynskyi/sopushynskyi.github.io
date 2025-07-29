@@ -28,7 +28,7 @@ build: install
 # Запуск локального сервера
 serve: install
 	@echo "==> Starting server at http://localhost:4000"
-	$(JEKYLL) serve --source $(SRC_DIR) --destination $(BUILD_DIR) --trace
+	$(JEKYLL) serve --source $(SRC_DIR) --destination $(BUILD_DIR) --trace --host 0.0.0.0
 
 # Очистити
 clean:

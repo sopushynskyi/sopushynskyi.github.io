@@ -1,11 +1,11 @@
 ---
 layout: author
+priority: 1
 short_name: mkolas
-name: Микола Сопушинський
+name: Микола С.
 position: Software engineer
 location: Львів, Україна
-avatar: /assets/img/sopushynskyi_small.png
+avatar: /assets/img/ava/sopushynskyi_small.png
 bio: >- # site description
-  Головний редактор
-  for documentation things that he learned, meet him
+  Люблю їсти мед
 ---

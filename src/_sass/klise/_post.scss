@@ -13,9 +13,11 @@
   height: 12em;
   border-radius: 5px 5px 0px 0px;
   overflow: hidden;
-
+  margin-right: $spacing-full;
+  @include media-query($on-mobile) {
+    margin-right: calc($spacing-half + 5px);
+  }
   img {
-    max-width: min-content;
     position: relative;
     z-index: -1;
     display: block;
@@ -87,6 +89,7 @@
 // Post content
 .page-content {
   padding-top: 0px;
+  text-align: justify;
 
   iframe {
     text-align: center;
@@ -127,7 +130,7 @@
 
   > p {
     margin: 0;
-    text-align: justify;
+
     padding-top: $spacing-full - 15;
     padding-bottom: $spacing-full - 15;
   }

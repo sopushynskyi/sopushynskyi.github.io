@@ -136,6 +136,13 @@ body[data-theme="dark"] {
       .menu-link {
         color: $dark-white;
       }
+
+      .blog-name {
+        a {
+          color: $dark-white;
+        }
+      }
+
       @include media-query($on-mobile) {
         background-color: $dark-black;
         border-color: $dark-light;

@@ -1,10 +1,12 @@
 <div class="author-mini">
   <a href="{{ author.url }}">
-    <img
-            class="author-avatar-mini"
-            src="{{ author.avatar }}"
-            alt="{{ author.short_name }}"
-    />
+    {% if show_avatar == true %}
+      <img
+              class="author-avatar-mini"
+              src="{{ author.avatar }}"
+              alt="{{ author.short_name }}"
+      />
+    {% endif %}
     <span class="author-name-mini">{{ author.name }}</span>
   </a>
 </div>
